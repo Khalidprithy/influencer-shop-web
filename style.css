@@ -1,0 +1,89 @@
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+
+    --main-font-color: black;
+    --font-color-dark: rgb(71, 69, 69);
+    --font-color-light: #797D7F;
+
+    --bg-color-light: #F4F6F6;
+    --bg-coler-dark: #273746;
+    --button-color: #DC7633;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+/****
+ nav-bar  
+     ****/
+
+.nav-bar {
+    background-color: var(--bg-color-light);
+    display: flex;
+    justify-content: space-between;
+}
+
+#shop-title {
+    color: var(--font-color-light);
+    padding: 5vh;
+    margin-left: 20px;
+    position: relative;
+}
+
+#shop-title h4 {
+    position: fixed;
+}
+
+.nav-links {
+
+    /* background-color: rgb(230, 139, 139); */
+    display: flex;
+    list-style: none;
+    padding: 5vh;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--main-font-color);
+    text-decoration: none;
+    padding-left: 4vh;
+}
+
+/*****
+ welcome content  
+      *****/
+
+.container {
+    margin-left: 40px;
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {}
+
+.welcome-content h1 {
+    color: var(--main-font-color);
+    font-size: 35px;
+}
+
+.welcome-content p {
+    font-size: 0.8rem;
+    color: var(--font-color-dark);
+}
+
+#welcome-img img {
+    display: block;
+    max-width: 100%;
+    min-width: 200px;
+}
