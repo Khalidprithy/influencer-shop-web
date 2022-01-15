@@ -266,10 +266,15 @@ nav a:hover {
     font-size: 12px;
 }
 
-.see-more-btn {
+.see-more-btn a {
     text-decoration: none;
-    color: #DC7633;
+    color: var(--bg-coler-dark);
     justify-content: flex-end;
+}
+
+.see-more-btn a:hover {
+    color: var(--button-color);
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 900px) {
