@@ -24,38 +24,67 @@ body {
  nav-bar  
      ****/
 
-.nav-bar {
+
+header {
     background-color: var(--bg-color-light);
+    min-height: 10vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav {
     display: flex;
+    padding: 2% 6%;
     justify-content: space-between;
+    align-items: center;
 }
 
-#shop-title {
+nav a {
     color: var(--font-color-light);
-    padding: 5vh;
-    margin-left: 20px;
-    position: relative;
+    text-decoration: none;
+    width: 150px;
+
 }
 
-#shop-title h4 {
-    position: relative;
+nav a:hover {
+    color: black;
 }
 
 .nav-links {
-
-    /* background-color: rgb(230, 139, 139); */
-    display: flex;
-    list-style: none;
-    padding: 5vh;
-    margin-right: 10px;
+    flex: 1;
+    text-align: right;
 }
 
-.nav-links a {
-    font-weight: 400;
-    font-size: 12px;
-    color: var(--main-font-color);
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: var(--bg-coler-dark);
+    font-family: var(--primary-font);
     text-decoration: none;
-    padding-left: 4vh;
+    font-size: 10px;
+
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
 }
 
 /*****
@@ -103,11 +132,20 @@ body {
 }
 
 .buy-button {
-    background-color: var(--button-color);
+    display: inline-block;
     text-decoration: none;
-    justify-content: center;
-    padding: 2px 20px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 10px;
+    background: var(--bg-coler-dark);
+    position: relative;
+}
+
+.buy-button:hover {
+    background: var(--button-color);
+    transition: 1s;
 }
 
 /* shopping container */
@@ -138,6 +176,7 @@ body {
     margin-bottom: 20px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .item-banner img {
@@ -168,28 +207,30 @@ body {
 }
 
 
-/* footer  */
+/* Footer */
+
 footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
     background-color: var(--bg-coler-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
 }
 
-.footer-container {
-    margin: 30px;
+footer h4 {
+    color: var(--font-color-light);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
-.social-links {
-    list-style: none;
-    display: flex;
+footer p {
+    padding-bottom: 10px;
 }
 
-.social-links i {
-    font-size: 15px;
-    background-color: #797D7F;
-    border-radius: 50%;
-    margin: 10px;
-    padding: 5px;
+
+.icons .fa {
+    color: var(--bg-color-light);
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 8px;
 }
